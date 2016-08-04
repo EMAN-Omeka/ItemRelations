@@ -1,4 +1,4 @@
-#ItemRelations (Omeka plugin) - Eman project fork - Alpha version
+#ItemRelations (Omeka plugin)
 
 ##Description
 This plugin is a fork of the ItemRelations plugin https://omeka.org/add-ons/plugins/item-relations/
