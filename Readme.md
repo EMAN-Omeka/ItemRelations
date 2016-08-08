@@ -21,5 +21,9 @@ If your site already uses ItemRelations, the plugin will do its best to upgrade 
 - Click the 'Upgrade' button next to the module's name
 
 
-##
+##Credits
+
+The core development was made by this team : https://github.com/omeka/plugin-ItemRelations
+
+This fork was funded by www.item.ens.fr and coded by Vincent BUARD
 
