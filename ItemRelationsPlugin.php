@@ -110,6 +110,7 @@ class ItemRelationsPlugin extends Omeka_Plugin_AbstractPlugin
                 $property->local_part = $formalProperty['local_part'];
                 $property->label = $formalProperty['label'];
                 $property->description = $formalProperty['description'];
+                $property->available = 1; 
                 $property->save();
             }
         }
