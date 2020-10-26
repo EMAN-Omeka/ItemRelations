@@ -73,3 +73,7 @@ jQuery(document).ready(function () {
     });
 });
 </script>
+nputs.val('');
+    });
+});
+</script>

@@ -30,7 +30,7 @@ $properties = $vocabulary->getProperties();
     <tr>
         <td><?php echo $vocabulary->custom ? '<span style="color:#ccc;">n/a</span>' : $property->local_part; ?></td>
         <td><?php echo get_db()->getTable('ItemRelationsRelation')->translate($property->label, $vocabulary->name); ?></td>
-        <td><?php echo get_db()->getTable('ItemRelationsRelation')->translate($property->label, $vocabulary->name, 'description'); ?></td>
+        <td><?php echo get_db()->getTable('ItemRelationsRelation')->translate($property->description, $vocabulary->name, 'description'); ?></td>
     </tr>
 <?php endforeach; ?>
     </tbody>

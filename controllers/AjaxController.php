@@ -15,3 +15,6 @@ class ItemRelations_AjaxController extends Omeka_Controller_AbstractActionContro
   		$this->_helper->json($items);
   	}
 }
+>json($items);
+  	}
+}

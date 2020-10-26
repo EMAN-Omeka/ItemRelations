@@ -122,4 +122,9 @@ $trads = array (
 		),
 );
 global $trads;
+?>orelle', 'couverture temporelle'),
+					'type' => array('type', 'la nature ou le genre de la ressource'),				
+		),
+);
+global $trads;
 ?>

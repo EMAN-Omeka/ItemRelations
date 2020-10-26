@@ -108,3 +108,9 @@ class ItemRelations_IndexController extends Omeka_Controller_AbstractActionContr
     	$this->render();
     }   
 }
+
+    	$this->view->content = $content;
+			
+    	$this->render();
+    }   
+}

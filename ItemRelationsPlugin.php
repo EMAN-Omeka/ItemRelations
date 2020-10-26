@@ -689,3 +689,6 @@ class ItemRelationsPlugin extends Omeka_Plugin_AbstractPlugin
         return true;
     }
 }
+ true;
+    }
+}

@@ -73,9 +73,9 @@ class Table_ItemRelationsRelation extends Omeka_Db_Table
     public function translate($label, $vocabularyNamespacePrefix, $mode = 'label')
     {
     	if ($vocabularyNamespacePrefix != '') {   
-    		$vocabularyNamespacePrefix = strtoupper($vocabularyNamespacePrefix);
 	    	global $trads;
 	    	$vocabularyNamespacePrefix = strtoupper($vocabularyNamespacePrefix);
+	    	if ($vocabularyNamespacePrefix == 'DCTERMS') {$vocabularyNamespacePrefix = 'DUBLIN CORE';}
 	    	$label = strtolower($label);
 	    	include_once(PLUGIN_DIR . '/ItemRelations/translations.php');
 	    	if (isset($trads[$vocabularyNamespacePrefix][$label])) {

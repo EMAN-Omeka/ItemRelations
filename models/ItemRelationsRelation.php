@@ -43,11 +43,20 @@ class ItemRelationsRelation extends Omeka_Record_AbstractRecord
      */
     public function getPropertyText()
     {
+    	$vocs = array (
+    		'dcterms' => 'DUBLIN CORE',
+    		'bibo' => 'BIBO',
+    		'foaf' => 'FOAF',
+    		'frbr' => 'FRBR',
+    	);
         $property = new ItemRelationsProperty;
         $property->local_part = $this->property_local_part;
-        $property->label = $this->getTable()->translate($this->property_label, $this->vocabulary_namespace_prefix);
+        if (isset($vocs[$this->vocabulary_namespace_prefix])) {
+          $property->label = $this->getTable()->translate($this->property_label, $vocs[$this->vocabulary_namespace_prefix]);          
+        } else {
+          $property->label = $this->property_label;
+        }
         $property->vocabulary_namespace_prefix = $this->vocabulary_namespace_prefix;
-
         return $property->getText();
     }
 }

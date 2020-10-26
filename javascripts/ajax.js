@@ -1,12 +1,5 @@
 window.jQuery = window.$ = jQuery;
 
-jQuery(document).ready(function() {
-	$.ajaxSetup({
-		username : "OmEkA" ,
-		password : "nm493ie698vg"
-	});
-});
-
 jQuery(document).on('focus', '.ir-autocomplete', function(e) {
   webroot = $('#phpWebRoot').val();
 	$(this).autocomplete({
